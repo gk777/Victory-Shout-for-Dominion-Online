@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+
+audio = new Audio();
+audio.src = 'http://gurukhalsa.me/fus_ro_dah.mp3';
+
+chrome.extension.onRequest.addListener(
+    function(request, sender, sendResponse) {
+        if (request.make_victory_shout){
+            audio.play();
+        } 
+    });
+
+</script>
+</head>
+</html>

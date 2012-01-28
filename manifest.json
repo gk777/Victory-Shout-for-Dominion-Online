@@ -1,0 +1,15 @@
+{
+  "name": "Dominion Online Victory Shout",
+  "version": "1.0",
+  "description": "When you win a game of Dominion Online, from dominion.isotropic.org, this will play the Fus-Ro-Dah victory shout and theme music.",
+  "background_page": "background.html",
+  "permissions": [
+    "tabs", "http://dominion.isotropic.org/play"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://dominion.isotropic.org/play"],
+      "js": ["victory_shouts.js"]
+    }
+  ]
+}
